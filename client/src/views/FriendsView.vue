@@ -293,4 +293,105 @@ async function removeFriend(friendId) {
 .btn-remove:hover {
   opacity: 1;
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .friends-page {
+    padding: 0 4px;
+  }
+
+  .friends-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .search-section {
+    margin-bottom: 24px;
+  }
+
+  .search-box input {
+    padding: 12px 16px 12px 44px;
+    font-size: 0.95rem;
+  }
+
+  .search-icon {
+    left: 14px;
+    font-size: 1.1rem;
+  }
+
+  .search-item {
+    padding: 12px 16px;
+  }
+
+  .avatar {
+    font-size: 1.3rem;
+  }
+
+  .name {
+    font-size: 0.95rem;
+  }
+
+  .level {
+    font-size: 0.85rem;
+  }
+
+  .btn-add {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+
+  .friend-card {
+    padding: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .friend-info {
+    gap: 12px;
+  }
+
+  .friend-actions {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .btn-visit {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .friends-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .search-box input {
+    padding: 10px 14px 10px 40px;
+    font-size: 0.9rem;
+  }
+
+  .friend-card {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .friend-details .name {
+    font-size: 0.9rem;
+  }
+
+  .friend-details .level {
+    font-size: 0.8rem;
+  }
+
+  .btn-visit {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    border-radius: 8px;
+  }
+
+  .btn-remove {
+    font-size: 1rem;
+  }
+}
 </style>

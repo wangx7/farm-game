@@ -57,3 +57,27 @@ button {
 .fade-leave-to {
   opacity: 0;
 }
+
+/* 移动端全局样式 */
+@media (max-width: 768px) {
+  body {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+
+  button, a {
+    touch-action: manipulation;
+  }
+
+  /* 防止双击缩放 */
+  * {
+    touch-action: pan-x pan-y;
+  }
+}
+
+/* 安全区域适配 (iPhone X+) */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

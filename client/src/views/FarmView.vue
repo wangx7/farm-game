@@ -426,4 +426,136 @@ function showHarvestMessage(msg) {
     opacity: 1;
   }
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .farm-page {
+    padding: 0 4px;
+  }
+
+  .farm-header {
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .farm-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .btn-refresh {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .farm-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .plot {
+    border-radius: 12px;
+    border-width: 3px;
+  }
+
+  .crop-display {
+    font-size: 2.5rem;
+  }
+
+  .progress-bar {
+    width: 60px;
+    height: 6px;
+  }
+
+  .stage-text {
+    font-size: 0.7rem;
+  }
+
+  .empty-plot {
+    font-size: 2rem;
+  }
+
+  .empty-text {
+    font-size: 0.75rem;
+  }
+
+  /* 弹窗适配 */
+  .crop-selector {
+    padding: 20px;
+    width: 95%;
+    max-height: 70vh;
+  }
+
+  .crop-selector h3 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+
+  .crop-item {
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .crop-icon {
+    font-size: 1.5rem;
+  }
+
+  .crop-name {
+    font-size: 0.95rem;
+  }
+
+  .crop-price,
+  .crop-time,
+  .crop-harvest {
+    font-size: 0.8rem;
+  }
+
+  .harvest-toast {
+    bottom: 80px;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .farm-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .farm-grid {
+    gap: 8px;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .plot {
+    border-radius: 10px;
+    border-width: 2px;
+  }
+
+  .crop-display {
+    font-size: 2rem;
+  }
+
+  .progress-bar {
+    width: 50px;
+    height: 5px;
+  }
+
+  .empty-plot {
+    font-size: 1.5rem;
+  }
+
+  .crop-selector {
+    padding: 16px;
+  }
+
+  .crop-item {
+    padding: 10px;
+  }
+}
 </style>

@@ -153,4 +153,108 @@ function formatTime(ms) {
   border-radius: 12px;
   color: #2d5016;
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .shop-page {
+    padding: 0 4px;
+  }
+
+  .shop-header {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .shop-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .my-coins {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+
+  .my-coins strong {
+    font-size: 1.1rem;
+  }
+
+  .seed-card {
+    grid-template-columns: 60px 1fr;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .seed-icon {
+    font-size: 3rem;
+  }
+
+  .seed-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .seed-stats {
+    gap: 8px;
+  }
+
+  .stat {
+    font-size: 0.85rem;
+  }
+
+  .seed-price {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+
+  .seed-card {
+    position: relative;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+
+  .shop-tip {
+    margin-top: 24px;
+    padding: 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-header h2 {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  .seed-card {
+    grid-template-columns: 50px 1fr;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .seed-icon {
+    font-size: 2.5rem;
+  }
+
+  .seed-info h3 {
+    font-size: 1rem;
+  }
+
+  .seed-stats {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .stat {
+    font-size: 0.8rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
 </style>

@@ -91,11 +91,9 @@ async function handleSubmit() {
 
 <style scoped>
 .login-page {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1a3a0f 0%, #2d5016 50%, #4a7c23 100%);
   padding: 20px;
 }
 
@@ -212,5 +210,57 @@ async function handleSubmit() {
   text-align: center;
   color: #666;
   font-size: 0.9rem;
+}
+
+/* 移动端适配 */
+@media (max-width: 480px) {
+  .login-page {
+    padding: 12px;
+    min-height: calc(100vh - 60px);
+  }
+
+  .login-container {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+
+  .login-header {
+    margin-bottom: 20px;
+  }
+
+  .login-header h1 {
+    font-size: 2rem;
+  }
+
+  .login-header p {
+    font-size: 0.9rem;
+  }
+
+  .login-tabs {
+    margin-bottom: 20px;
+  }
+
+  .tab {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .login-form {
+    gap: 16px;
+  }
+
+  .form-group input {
+    padding: 12px 14px;
+  }
+
+  .btn-submit {
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .login-tips {
+    margin-top: 20px;
+    font-size: 0.85rem;
+  }
 }
 </style>

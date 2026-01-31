@@ -336,4 +336,124 @@ function showStealMessage(msg) {
     opacity: 1;
   }
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .visit-page {
+    padding: 0 4px;
+  }
+
+  .visit-header {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .btn-back {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .visit-header h2 {
+    font-size: 1.3rem;
+    flex: auto;
+    width: 100%;
+    order: -1;
+  }
+
+  .friend-level {
+    font-size: 0.9rem;
+  }
+
+  .farm-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .plot {
+    border-radius: 12px;
+    border-width: 3px;
+  }
+
+  .crop-display {
+    font-size: 2.5rem;
+  }
+
+  .progress-bar {
+    width: 60px;
+    height: 6px;
+  }
+
+  .stage-text {
+    font-size: 0.7rem;
+  }
+
+  .steal-badge,
+  .stolen-badge {
+    top: 4px;
+    right: 4px;
+    padding: 3px 6px;
+    font-size: 0.65rem;
+  }
+
+  .empty-plot {
+    font-size: 2rem;
+  }
+
+  .empty-text {
+    font-size: 0.75rem;
+  }
+
+  .steal-toast {
+    bottom: 80px;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .visit-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn-back {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+  }
+
+  .farm-grid {
+    gap: 8px;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .plot {
+    border-radius: 10px;
+    border-width: 2px;
+  }
+
+  .crop-display {
+    font-size: 2rem;
+  }
+
+  .progress-bar {
+    width: 50px;
+    height: 5px;
+  }
+
+  .steal-badge,
+  .stolen-badge {
+    top: 2px;
+    right: 2px;
+    padding: 2px 5px;
+    font-size: 0.6rem;
+  }
+
+  .empty-plot {
+    font-size: 1.5rem;
+  }
+}
 </style>

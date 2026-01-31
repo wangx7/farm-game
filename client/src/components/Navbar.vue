@@ -137,4 +137,67 @@ function handleLogout() {
   background: rgba(255, 255, 255, 0.25);
   color: #fff;
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .navbar {
+    height: 56px;
+    padding: 0 12px;
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand .logo {
+    font-size: 1.2rem;
+  }
+
+  .navbar-user {
+    gap: 12px;
+  }
+
+  .user-stats {
+    display: none;
+  }
+
+  .user-info {
+    gap: 8px;
+  }
+
+  .username {
+    font-size: 0.9rem;
+  }
+
+  .btn-logout {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+
+  .navbar-menu {
+    gap: 4px;
+  }
+
+  .nav-item {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 50px;
+    padding: 0 8px;
+  }
+
+  .navbar-brand .logo {
+    font-size: 1rem;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .nav-item {
+    padding: 6px 8px;
+    font-size: 0.85rem;
+  }
+}
 </style>

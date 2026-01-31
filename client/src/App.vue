@@ -26,4 +26,19 @@ const userStore = useUserStore()
   padding: 20px;
   padding-top: 80px;
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 12px;
+    padding-top: 68px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 8px;
+    padding-top: 58px;
+  }
+}
 </style>
